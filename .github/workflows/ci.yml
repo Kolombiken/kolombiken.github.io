@@ -13,7 +13,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v2-beta
         with:
-          node-version: "12.x"
+          node-version: '12.x'
 
       - name: Cache dependencies
         uses: actions/cache@v2
@@ -35,4 +35,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           external_repository: kolombiken/kolombiken.github.io
           publish_dir: ./dist
-          publish_branch: master
+          publish_branch: gh-pages
